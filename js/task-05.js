@@ -1,12 +1,12 @@
 const inputEl = document.querySelector('#name-input');
-const spanEl = document.querySelector('#name-output');
+const spanEl = document.querySelector('#name-output ');
 
-const validColor = document.querySelector('')
+inputEl.addEventListener('input', onInputText)
 
-inputEl.addEventListener('input', (event) => {
-    
-     spanEl.textContent = event.currentTarget.value;
+function onInputText(event) {
+
+     spanEl.textContent = event.target.value || "Anonymous";
 
      
-});
+};
 
