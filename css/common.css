@@ -23,7 +23,3 @@ button {
   cursor: pointer;
 }
 
-.gallery--current {
-  display: flex;
-  flex-direction: column;
-}
