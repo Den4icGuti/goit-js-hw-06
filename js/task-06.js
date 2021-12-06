@@ -10,12 +10,14 @@ function focusInput(event) {
 
 function blurInput(event) {
 
+    
    
-    if (event.currentTarget.value.length == inputLengthEl || event.currentTarget.value.length < inputLengthEl) {
-     input.classList.add('valid')
-    } else {
-     input.classList.add('invalid')
+    if (event.currentTarget.value.length == inputLengthEl && event.currentTarget.value.length <= inputLengthEl) {
+        input.classList.add('valid');
+    } else if (event.currentTarget.length == null) {
+        input.classList.add('invalid');
     }
+   
 }
  
 
