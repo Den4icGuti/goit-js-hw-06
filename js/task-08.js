@@ -7,19 +7,18 @@ function onSubmitForm(event) {
     const formEl = event.currentTarget.elements;
     const email = formEl.email.value;
     const password = formEl.password.value;
-
-    if (email === '' || password === '') {
-         alert('Все поля должны быть заполнены')
-    }
-    const dataUser = {
+     const dataUser = {
         email,
         password,
     }
-   
-    console.log(dataUser)
-
+      
+     if (email === '' || password === '') {
+          alert('Все поля должны быть заполнены')
+     } else {
+     console.log(dataUser)
      form.reset();
-    
+     }
+   
 }
 
 
