@@ -14,6 +14,7 @@ function blurInput(event) {
 
 if (event.currentTarget.value.length == inputLengthEl && event.currentTarget.value.length <= inputLengthEl) {
     input.classList.add('valid');
+    input.classList.remove('invalid')
     
     } else {
         input.classList.add('invalid');
